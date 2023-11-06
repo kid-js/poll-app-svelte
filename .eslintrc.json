@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "overrides": [
+        {
+            "files": ["*.svelte"],
+            "parser": "svelte-eslint-parser"
+        }
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "no-inner-declarations": 0,
+        "no-constant-condition": 0,
+        "no-unused-vars": 1,
+        "no-console": 1,
+        "no-empty": 1,
+        "semi": 1,
+        "max-len": [
+            "warn",
+            {
+              "code": 80
+            }
+        ]
+    },
+    "ignorePatterns": ["**/*.html"]
+}

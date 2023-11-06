@@ -1,0 +1,32 @@
+{
+    "name": "poll-app-svelte",
+    "private": true,
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "lint": "eslint --ext .js,.svelte src"
+    },
+    "browserslist": [
+        "defaults",
+        ">0.2%",
+        "IE 8-11"
+    ],
+    "devDependencies": {
+        "@sveltejs/vite-plugin-svelte": "^2.4.2",
+        "@vitejs/plugin-legacy": "^4.1.1",
+        "autoprefixer": "^10.4.15",
+        "custom-event-polyfill": "^1.0.7",
+        "eslint": "^8.51.0",
+        "eslint-plugin-svelte": "^2.34.0",
+        "ie11-crypto-polyfill": "^1.0.0",
+        "resize-observer-polyfill-lite": "^1.0.0",
+        "svelte": "^4.2.1",
+        "vite": "^4.4.5"
+    },
+    "dependencies": {
+        "nanoid": "^5.0.2"
+    }
+}
