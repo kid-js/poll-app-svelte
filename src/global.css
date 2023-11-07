@@ -1,4 +1,5 @@
-/* Fonts */
+/* * * Fonts * * */
+
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap');
 
 /* * * * * * * * * * * /
@@ -31,26 +32,22 @@ html {
     scrollbar-gutter: var(--sb-gutter, stable both-edges);
 }
 
-body,
-:where(blockquote, figure):where([class]) {
-    margin: 0;
-}
-
 :active,
 a:active {
     outline: 0;
 }
 
-:where(ul, ol):where([class]) {
+body, blockquote, figure,
+h1, h2, h3, p, ul, ol, dl {
+    margin: 0;
+}
+
+ul, ol {
     padding-left: 0;
 }
 
-:where(ul[class]) {
+ul {
     list-style: none;
-}
-
-:where(h1, h2, h3, p, ul, ol, dl):where([class]) {
-    margin-block: 0;
 }
 
 img {
@@ -107,25 +104,23 @@ body {
 
 @media screen and (-ms-high-contrast: active),
 (-ms-high-contrast: none) {
-    body, h1, h2, h3, p, ul {
-        margin: 0;
-    }
-    ul {
-        list-style: none;
-    }
     li {
-        margin-right: 28px;
+        margin: 0 8px;
     }
+
     button {
         margin-top: 12px;
     }
+
     .active,
     .border-bottom{
         background-color: transparent !important;
     }
+
     .active:hover {
         background-color: rgba(10, 207, 197, 0.06) !important;
     }
+
     .input-label {
         color: #8597a3 !important;
         left: 0;
