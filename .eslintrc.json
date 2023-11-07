@@ -29,5 +29,5 @@
             }
         ]
     },
-    "ignorePatterns": ["**/*.html"]
+    "ignorePatterns": ["**/*.html", "**/*.md"]
 }
