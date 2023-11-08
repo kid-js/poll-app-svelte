@@ -18,12 +18,12 @@
 </script>
 
 <nav class="tabs">
-    <ul class="tabs-list">
+    <ul class="tabs-list" role="menu">
         {#each tabs as tab}
             <li
                 class="tab"
                 class:active={tab === activeTab}
-                role="tab"
+                role="menuitem"
                 tabindex="0"
                 on:click={() => onTabClick(tab)}
                 on:keydown={(e) => onTabKeydown(e, tab)}

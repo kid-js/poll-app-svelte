@@ -79,7 +79,13 @@
         style={'icon icon_delete-poll'}
         on:click={() => onDeleteIconClick(poll)}
     >
-        <img src="images/delete-icon.svg" alt="Delete Poll" title="Delete Poll">
+        <img
+            src="images/delete-icon.svg"
+            alt="Delete Poll"
+            title="Delete Poll"
+            width="24px"
+            height="24px"
+        >
     </Button>
 </p>
 
